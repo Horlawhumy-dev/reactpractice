@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(240, 209, 168, 0.856);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.estate-intel h1 {
+  color: #4646e4;
+  margin-bottom: 2rem;
+}
+.estate-intel__flex {
+  display: flex;
+}
+.estate-intel__flex table {
+  padding: 1rem;
+}
+.estate-intel .table1 {
+  margin: 0 1rem;
+}
+.estate-intel .table1 thead {
+  display: flex;
+  background: #4646e4;
+  padding: 0.5rem;
+}
+.estate-intel .table1 thead tr {
+  margin: 0 0.5rem;
+  border-right: 1px solid white;
+}
+.estate-intel .table1 tbody tr {
+  margin: 1rem 0;
+}
+.estate-intel .table2 thead {
+  display: flex;
+  background: #4646e4;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.estate-intel .table2 thead tr {
+  margin: 0 0.5rem;
+  border-right: 1px solid white;
+}
+.estate-intel .table2 thead tr dt {
+  padding: 0 5px 0 0;
+}
+.estate-intel .table2 tbody {
+  display: flex;
+}
+.estate-intel .table2 tbody tr {
+  margin: 0 0.5rem;
+}/*# sourceMappingURL=style.css.map */

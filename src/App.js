@@ -1,9 +1,14 @@
-import "tailwindcss/tailwind.css"
-import './App.css';
+import React from 'react';
+import Container from './hoc/Container'
+import EstateIntel from './components/EstateIntel'
+// import "tailwindcss/tailwind.css"
+
 
 function App() {
     return(
-        <div> App JS</div>
+        <Container>
+            <EstateIntel />
+        </Container>
     )
 }
 export default App;

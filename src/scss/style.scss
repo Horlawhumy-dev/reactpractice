@@ -1,0 +1,83 @@
+@import 'config';
+@import 'utilities';
+
+body{
+    background: $bg-color;
+    font-family: $font-stack;
+    font-size: $font-size;
+}
+
+.container{
+    width: 90%;
+    margin: 2rem auto;
+    @include flexCenter;
+}
+
+
+.estate-intel{
+    h1{
+        color: $primary-color;
+        margin-bottom: 2rem;
+    }
+
+    &__flex{
+        display: flex;
+
+        table{
+            padding: 1rem;
+        }
+    }
+    
+    .table1{
+        margin: 0 1rem ;
+        & thead{
+            display: flex;
+            background: $primary-color;
+            padding: .5rem;
+    
+            tr{
+                margin: 0 .5rem;
+               border-right: 1px solid white;
+            }
+        }
+
+        & tbody{
+    
+            tr{
+                margin: 1rem 0;
+            }
+        }
+    }
+
+   
+    .table2{
+       & thead{
+            display: flex;
+            background: $primary-color;
+            padding: .5rem;
+            border-radius:5px ;
+    
+            tr{
+                margin: 0 .5rem;
+               border-right: 1px solid white;
+               dt{
+                padding: 0 5px 0 0;
+            }
+         }
+        }
+
+        & tbody{
+            display: flex;
+    
+            tr{
+                margin: 0 .5rem;
+            }
+        }
+
+    }
+
+    
+
+    
+}
+
