@@ -1,8 +1,24 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import { createStore } from 'redux';
+// import { combinedReducers } from 'redux';
+import reducer from './reduxComponents/reducer';
+import createClaims from './reduxComponents/createClaims';
+import createPolicies from './reduxComponents/createPolicies';
+import deletePolicy from './reduxComponents/deletePolicy';
+console.clear();
+const store = createStore(reducer);
+store.dispatch(createClaims('Arafat', 120))
+store.dispatch(createPolicies('Olawumi'))
+store.dispatch(deletePolicy('Arafat'))
+
+console.log(store.getState());
+
 
 ReactDOM.render(
   <React.StrictMode>
