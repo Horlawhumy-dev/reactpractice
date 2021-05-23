@@ -1,6 +1,12 @@
 // Flex Center Mixin
-@mixin flexCenter {
+@mixin flex {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(1fr, 200px));
+    grid-gap: 5px;
 }

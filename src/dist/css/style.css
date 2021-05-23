@@ -4,6 +4,48 @@
   box-sizing: border-box;
 }
 
+.Header {
+  background-color: blue;
+  padding: 1rem 0;
+  width: 100%;
+}
+.Header h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.control-output {
+  margin-top: 1rem;
+}
+.control-output h2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.controls {
+  background-color: rgba(240, 209, 168, 0.856);
+  display: grid;
+  grid-template-columns: repeat(auto, minmax(1fr, 200px));
+  grid-gap: 5px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.control-btn {
+  background-color: white;
+  padding: 5px 15px;
+  outline: none;
+  border: 1px solid blue;
+}
+.control-btn:hover, .control-btn:active {
+  background-color: lightgray;
+  color: black;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
 body {
   background: rgba(240, 209, 168, 0.856);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -11,54 +53,18 @@ body {
 }
 
 .container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: black;
+  color: blue;
   width: 90%;
+  height: 80vh;
   margin: 2rem auto;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  padding: 2rem 2rem 0 2rem;
 }
-
-.estate-intel h1 {
-  color: #4646e4;
-  margin-bottom: 2rem;
-}
-.estate-intel__flex {
-  display: flex;
-}
-.estate-intel__flex table {
-  padding: 1rem;
-}
-.estate-intel .table1 {
-  margin: 0 1rem;
-}
-.estate-intel .table1 thead {
-  display: flex;
-  background: #4646e4;
-  padding: 0.5rem;
-}
-.estate-intel .table1 thead tr {
-  margin: 0 0.5rem;
-  border-right: 1px solid white;
-}
-.estate-intel .table1 tbody tr {
-  margin: 1rem 0;
-}
-.estate-intel .table2 thead {
-  display: flex;
-  background: #4646e4;
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-.estate-intel .table2 thead tr {
-  margin: 0 0.5rem;
-  border-right: 1px solid white;
-}
-.estate-intel .table2 thead tr dt {
-  padding: 0 5px 0 0;
-}
-.estate-intel .table2 tbody {
-  display: flex;
-}
-.estate-intel .table2 tbody tr {
-  margin: 0 0.5rem;
+@media screen and (min-width: 780px) {
+  .container {
+    width: 500px;
+  }
 }/*# sourceMappingURL=style.css.map */

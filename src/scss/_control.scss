@@ -1,0 +1,32 @@
+
+.control-output{
+    margin-top: 1rem;
+    & h2{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+.controls{
+    background-color: $bg-color;
+    @include grid;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    
+}
+
+.control-btn{
+        background-color: $secondary-color;
+        padding:5px 15px;
+        outline: none;
+        border: 1px solid $primary-color;
+  
+        &:hover, 
+        &:active{
+            background-color: lightgray;
+            color: $tertiary-color;
+            transition: all .3s ease;
+            outline: none;
+        }
+    }
