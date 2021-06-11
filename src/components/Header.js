@@ -5,7 +5,7 @@ import '../dist/css/style.css';
 const Header = () => {
     return (
         <div className="Header">
-            <h1>Redux Counter App</h1>
+            <h1>React-Redux Counter App</h1>
         </div>
     )
 }
